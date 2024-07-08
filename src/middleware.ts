@@ -2,6 +2,7 @@ import { withAuth } from "next-auth/middleware"
 import { NextResponse } from "next/server"
 import { AUTH_PATH, PROTECTED_PATH, PUBLIC_PATH, ROOT_PATH } from "./lib/route"
 import { authOptions } from "@/lib/auth";
+import { getServerSession } from "next-auth";
 
 // export const config = { matcher: ["/dashboard/", "/dashboard/:path*"] };
 export default async function Middleware() {
