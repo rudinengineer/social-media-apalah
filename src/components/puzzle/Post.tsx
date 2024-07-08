@@ -79,7 +79,7 @@ export default function Post({data, setShowComment}: Props) {
             <Image src={data.image} alt={`Postingan ${data.author?.username}`} width={100} height={100} className='w-full aspect-square object-cover object-center rounded-md' />
         </div>
         <div className="mt-1 px-2 w-full flex-between-center">
-            <div className="flex justify-between sm:justify-start sm:gap-8 items-center">
+            <div className="w-full flex justify-between sm:justify-start sm:gap-8 items-center">
                 <ReactAction likes={reactsCount} postId={data.id} handleReact={handleReact} isReact={isReact} />
                 <div>
                     <h1 className='text-xs sm:text-sm'>{ commentsCount } komentar</h1>
