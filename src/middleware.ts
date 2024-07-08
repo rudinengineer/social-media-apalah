@@ -1,12 +1,12 @@
-/*import { withAuth } from "next-auth/middleware"
+// import { withAuth } from "next-auth/middleware"
 import { NextRequest, NextResponse } from "next/server"
-import { AUTH_PATH, PROTECTED_PATH, PUBLIC_PATH, ROOT_PATH } from "./lib/route"
+/*import { AUTH_PATH, PROTECTED_PATH, PUBLIC_PATH, ROOT_PATH } from "./lib/route"
 import { authOptions } from "@/lib/auth";
-import { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth";*/
 
 // export const config = { matcher: ["/dashboard/", "/dashboard/:path*"] };
 export default async function Middleware(req: NextRequest) {
-    const session = await getServerSession(authOptions)
+    /*const session = await getServerSession(authOptions)
 
     if ( AUTH_PATH.includes(req.nextUrl.pathname) && !session?.user ) {
             return NextResponse.redirect(new URL('/signin', process.env.NEXT_BASEURL))
@@ -15,9 +15,9 @@ export default async function Middleware(req: NextRequest) {
             if ( session?.user ) {
                 return NextResponse.redirect(new URL(ROOT_PATH, process.env.NEXT_BASEURL))
             }
-        }
+        }*/
         return NextResponse.next()
-}*/
+}
 
 /*export default withAuth(
     function middleware(req) {
