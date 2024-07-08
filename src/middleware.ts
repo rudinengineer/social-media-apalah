@@ -15,6 +15,7 @@ export default withAuth(
             }
         }
         return NextResponse.next()
+        
         // } else {
         //     if ( req.nextUrl.pathname !== ROOT_PATH && !PUBLIC_PATH.includes(req.nextUrl.pathname) && !req.nextauth.token ) {
         //         return NextResponse.redirect(new URL('/signin', process.env.NEXT_BASEURL))
