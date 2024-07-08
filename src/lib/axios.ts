@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseurl = 'https://social-media-apalah.vercel.app/'
+const baseurl = 'https://social-media-apalah.vercel.app/api'
 
 export const baseAxios = axios.create({
     baseURL: baseurl
