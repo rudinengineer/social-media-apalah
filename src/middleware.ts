@@ -1,4 +1,4 @@
-import { withAuth } from "next-auth/middleware"
+/*import { withAuth } from "next-auth/middleware"
 import { NextRequest, NextResponse } from "next/server"
 import { AUTH_PATH, PROTECTED_PATH, PUBLIC_PATH, ROOT_PATH } from "./lib/route"
 import { authOptions } from "@/lib/auth";
@@ -17,7 +17,7 @@ export default async function Middleware(req: NextRequest) {
             }
         }
         return NextResponse.next()
-}
+}*/
 
 /*export default withAuth(
     function middleware(req) {
