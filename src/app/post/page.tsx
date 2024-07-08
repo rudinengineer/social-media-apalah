@@ -70,7 +70,7 @@ export default function Page({}: Props) {
                 </div>
                 <div>
                   <h1 className='text-base font-semibold'>Eick Setyawan</h1>
-                   <select className='input-default px-2 py-1.5 rounded-md' defaultValue='public'>
+                   <select name='status' className='input-default px-2 py-1.5 rounded-md' defaultValue='public'>
                       <option value='public'>Publik</option>
                       <option value='private'>Privat</option>
                    </select>
